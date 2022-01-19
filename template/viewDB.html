@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block content%}
+<style>
+	.imgbox{
+		margin:50px;,
+	}
+</style>
+
+{% for i in listOfImagesPath %}
+
+<div class="imgbox">
+<img src={{i}} style="width: 100px;"> <br>
+</div>
+{% endfor%}
+
+
+
+{% endblock %}
